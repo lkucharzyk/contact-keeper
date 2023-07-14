@@ -1,3 +1,4 @@
 {
-    "mongoURI" : "mongodb+srv://lukaszkucharzyk17:hagen17lukasz@cluster0.6qlh7ls.mongodb.net/?retryWrites=true&w=majority"
+    "mongoURI" : "mongodb+srv://lukaszkucharzyk17:hagen17lukasz@cluster0.6qlh7ls.mongodb.net/?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
 }
