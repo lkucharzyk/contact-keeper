@@ -35,6 +35,19 @@ export default (state, action) =>{
                 ...state,
                 current: null
             }
+        case FILTER_CONTACTS:
+            return{
+                ...state,
+                filtered: state.contacts.filter(contact => {
+                    return contact.name.toLowerCase().includes(action.payload.toLowerCase()) ||
+                    contact.email.toLowerCase().includes(action.payload.toLowerCase())
+                })
+            }
+        case CLEAR_FILTER:
+            return{
+                ...state,
+                filtered: null
+            }            
         default: 
             return state;
     }
